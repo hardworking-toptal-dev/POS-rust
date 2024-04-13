@@ -9,11 +9,6 @@ pub struct Wallet {
     pub key_pair: String,
 }
 
-#[derive(Serialize, Deserialize, Debig, Clone)]
-pub struct Wallet_test {
-    pub key: String,
-}
-
 impl Wallet {
     pub fn new() -> Wallet {
         let mut csprng = OsRng {};
